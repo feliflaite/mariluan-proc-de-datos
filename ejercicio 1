@@ -1,0 +1,13 @@
+
+  CREATE TABLE autor(
+    idautor INT AUTO_INCREMENT PRIMARY KEY,
+  	nombre VARCHAR(50) NOT NULL, 
+    nacionalidad VARCHAR NOT NULL 
+  );
+	CREATE TABLE LIBRO(
+      id_LIBRO INT AUTO_INCREMENT PRIMARY KEY,
+      titulo VARCHAR(100),
+      genero  VARCHAR(50) NOT NULL, 
+      idautor INT,
+      FOREIGN KEY (idautor) REFERENCES autor(idautor) ON DELETE SET NULL 
+	);
