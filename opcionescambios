@@ -1,4 +1,5 @@
-import tkinter as tk  # Tkinter para la ventana
+
+ import tkinter as tk  # Tkinter para la ventana
 from urllib.request import urlopen  # Para descargar la imagen desde internet
 from PIL import Image, ImageTk  # Pillow para trabajar con imágenes
 from io import BytesIO  # Para convertir los datos de la imagen
@@ -21,7 +22,7 @@ def descargarFondo():
     return imagen
 
 def descargarZoe1():
-    urlImagen = "blob:https://web.whatsapp.com/a56e1635-7d8b-4c76-b57a-c685c19f6e58"
+    urlImagen = "https://private-user-images.githubusercontent.com/206856475/443749159-7e601685-3b50-45da-8be4-dddda2a6f57c.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDc4MjkzMzksIm5iZiI6MTc0NzgyOTAzOSwicGF0aCI6Ii8yMDY4NTY0NzUvNDQzNzQ5MTU5LTdlNjAxNjg1LTNiNTAtNDVkYS04YmU0LWRkZGRhMmE2ZjU3Yy5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUyMVQxMjAzNTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZjNlMGM1YmQ3Y2U5ZmQwNTg1YzA1MmQ2MDAxMGU4NjE0Y2FjMWUyNWIyMDE5NGNhNGY5MmQ1MGRkZjNkMDgxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.NMyt8P4T8_euufC_hbtBiftAdIsiaVa-CknCrAqGLWg"
     datosImagen = urlopen(urlImagen)  # Descargar la imagen
     imagenBinaria = datosImagen.read()  # Obtener los datos de la imagen
     # Paso 2: Convertir los datos binarios en una imagen que podamos mostrar
@@ -35,7 +36,7 @@ def descargarZoe2():
     imagen = Image.open(BytesIO(imagenBinaria))
     return imagen
 def descargarfeli1():
-    urlImagen = "blob:https://web.whatsapp.com/216e22fc-dee4-4af6-a8a1-ed361890c924"
+    urlImagen = "https://private-user-images.githubusercontent.com/206856475/446076020-3bf2b011-78e4-4bc2-abb0-e00a5adf1c93.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDc4MzAzNDIsIm5iZiI6MTc0NzgzMDA0MiwicGF0aCI6Ii8yMDY4NTY0NzUvNDQ2MDc2MDIwLTNiZjJiMDExLTc4ZTQtNGJjMi1hYmIwLWUwMGE1YWRmMWM5My5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUyMVQxMjIwNDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03MDVhMzFmM2RmNzZlNjg5MjdjNmRjNWJjNjIzYTY5ZTQ5OGM2ZjA4ZTRmMzZmMzUzZjg5NjI4NDgyMWNmOWNmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.5sER8i7c7WXzElMzlNhVbmRdt5-fXH3WHo_7UMnN8wU"
     datosImagen = urlopen(urlImagen)  # Descargar la imagen
     imagenBinaria = datosImagen.read()  # Obtener los datos de la imagen
     # Paso 2: Convertir los datos binarios en una imagen que podamos mostrar
@@ -119,4 +120,4 @@ def main():
     ventana.mainloop()
 if __name__=="__main__" :
     main()
-     
+
